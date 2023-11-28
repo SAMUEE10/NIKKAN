@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <div class="container">
+        <img src="C:/PAGINA WEB/imagenes/logo.png" alt="Logo del Club Nikkan" class="logo">
+        <h2>Club Nikkan / 日関クラブ</h2>
+        <h3>Usuario Registrado</h3>
+        <form action="http://localhost:3000/login" method="post" onsubmit="return validarFormulario()">
+            <label for="tipo_documento">Tipo de documento</label>
+            <select id="tipo_documento" name="tipo_documento">
+                <option value="CC">CC</option>
+                <option value="TI">TI</option>
+            </select>
+            <br>
+            <label for="usuario">Usuario</label>
+            <input type="text" id="usuario" name="usuario">
+            <br>
+            <label for="contrasena">Contraseña</label>
+            <input type="password" id="contrasena" name="contrasena">
+            <p class="forgot-password">Olvidé mi contraseña</p>
+
+            <div class="roles">
+                <label class="role-label" for="estudiante">Estudiante</label>
+                <input type="checkbox" id="estudiante" name="rol" value="estudiante">
+
+                <label class="role-label" for="docente">Docente</label>
+                <input type="checkbox" id="docente" name="rol" value="docente">
+            </div>
+
+            <button type="submit" class="submit-btn">Ingresar</button>
+            <button type="submit" class="submit-btn">Registrarse</button>
+        </form>
+    </div>
+
+    <!-- Sección agregada para la imagen de fondo -->
+    <div class="background-images">
+        <img src="imagenes/fondo.jpg" alt="Fondo">
+    </div>
+</body>
+</html>
