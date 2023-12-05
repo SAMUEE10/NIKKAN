@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bienvenido</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="welcome-text">
+        <h1>¡Bienvenido!</h1>
+    </div>
+    <div class="button-container">
+        <div class="options-box">
+            <h2>Selecciona una opción</h2>
+            <!-- Añadido un identificador "nivelBasicoButton" al botón de Nivel Basico -->
+            <button id="nivelBasicoButton" class="rounded-button">Nivel Basico (1-20)</button>
+            <!-- Añadidos eventos de clic y mensajes a los otros botones -->
+            <button class="rounded-button" onclick="showMessage()">Nivel Basico intermedio (21-40)</button>
+            <button class="rounded-button" onclick="showMessage()">Nivel intermedio (41-60)</button>
+            <button class="rounded-button" onclick="showMessage()">Nivel Avanzado (Especial)</button>
+            <!-- Añadido evento de clic al botón de Foro Social -->
+            <button class="rounded-button red-button" onclick="openForoPage()">Foro Social</button>
+        </div>
+    </div>
+    <script src="bienvenido.js"></script>
+    <script>
+        // Añadido un evento de clic al botón de Nivel Basico
+        document.getElementById('nivelBasicoButton').addEventListener('click', function() {
+            // Redirigir a la página en la ruta especificada
+            window.location.href = 'file:///C:/PAGINA%20WEB/Maestro/Nivel%20basico.html';
+        });
+
+        // Añadido evento de clic al botón de Foro Social
+        function openForoPage() {
+            window.location.href = 'file:///C:/PAGINA%20WEB/FORO/foro.html';
+        }
+
+        // Función para mostrar el mensaje
+        function showMessage() {
+            alert("Próximamente estará disponible.");
+        }
+    </script>
+</body>
+
+</html>

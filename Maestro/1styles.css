@@ -1,0 +1,76 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url("imagenes/fondo3.jpg");
+    background-size: cover;
+    background-position: center;
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.button-container {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.options-box h2 {
+    color: #ffffff; /* Color rojo para la letra */
+    text-shadow: 2px 2px 4px #000; /* Contorno negro para la letra */
+}
+
+.title-box {
+    background-color: rgba(255, 255, 255, 0.5); /* Color blanco con opacidad 0.5 (ajusta según lo necesites) */
+    width: 100%;
+    padding: 20px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px rgb(0, 0, 0);
+}
+
+.button-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+}
+
+.number-button {
+    display: block;
+    width: 50px;
+    height: 50px;
+    padding: 10px;
+    border: 3px solid #000;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s, transform 0.3s;
+    text-shadow: 2px 2px 4px #fff;
+}
+
+.number-button:hover {
+    background-color: #0056b3;
+    color: #fff;
+    border-color: #0056b3;
+    transform: scale(1.1);
+}
+
+.continue-button {
+    display: block;
+    width: calc(100% - 20px);
+    margin-top: 20px;
+    padding: 10px; /* Reducido el padding para achicar el botón un poco */
+    border: 3px solid #000;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s, transform 0.3s;
+    text-shadow: 2px 2px 4px #fff;
+}
+
+.continue-button:hover {
+    transform: scale(1.1);
+}

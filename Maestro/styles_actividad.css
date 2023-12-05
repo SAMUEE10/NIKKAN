@@ -1,0 +1,149 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    /* Añade la imagen de fondo */
+    background: url('imagenes/fondo5.jpg') center center fixed; 
+    background-size: cover;
+}
+
+.page-container {
+    background-color: rgba(240, 240, 240, 0.0); /* Ajusta el valor alfa para la transparencia */
+    width: 80%;
+    max-width: 560px;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.0);
+}
+
+.top-box {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 10px;
+    width: 200px;
+    border-radius: 10px;
+    margin: 20px auto; /* Centra la caja horizontalmente y agrega margen en la parte superior e inferior */
+    height: 80px; /* Permitirá que la altura se ajuste automáticamente según el contenido */
+}
+
+
+.details-box {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 10px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    height: 60px; /* Ajusta la altura según tu preferencia */
+    width: 80px; /* Puedes ajustar el ancho según tu diseño */
+    max-width: 600px; /* Establece un ancho máximo para evitar que la caja sea demasiado ancha */
+    margin: 0 auto; /* Centra la caja horizontalmente */
+}
+
+
+.text-red {
+    color: #FF0000;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.info-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    border-radius: 4%;
+    background-color: rgba(255, 255, 255, 0.9); /* Ajusta el valor alfa para la transparencia */
+}
+
+.left-info p {
+    text-align: left;
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+}
+
+.right-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.right-info img {
+    max-width: 100%;
+    height: 100px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    vertical-align: middle;
+}
+
+.open-button {
+    background-color: rgba(255, 0, 0, 0.9); /* Ajusta el valor alfa para la transparencia */
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.bottom-box {
+    background-color: rgba(255, 255, 255, 0.9); /* Ajusta el valor alfa para la transparencia */
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.comment-section {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.comment-header {
+    background-color: rgba(224, 224, 224, 0.9); /* Ajusta el valor alfa para la transparencia */
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.comment-body textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    resize: vertical;
+}
+
+.send-button {
+    background-color: rgba(255, 0, 0, 0.9); /* Ajusta el valor alfa para la transparencia */
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Nuevo estilo para la selección cuantitativa de notas */
+.quantitative-rating {
+    margin-top: 10px;
+}
+
+.quantitative-rating label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 18px;
+    color: #333;
+}
+
+.quantitative-rating select {
+    width: 100%;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+}
+
+/* ... (código posterior) ... */

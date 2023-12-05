@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Actividad</title>
+    <link rel="stylesheet" href="styles_actividad.css">
+</head>
+
+<body>
+    <div class="page-container">
+        <!-- Cuadro superior con texto "Estudiante" -->
+        <div class="top-box">
+            <p class="text-red">PENDIENTE POR CALIFICACION</p>
+        </div>
+        <!-- Nueva caja para "Detalles" -->
+        <div class="details-box">
+            <p class="text-red">Detalles</p>
+        </div>
+        <!-- Cuadro intermedio con información y logo -->
+        <div class="info-box">
+            <div class="left-info">
+                <p>Nivel: Basico</p>
+                <p>Lección: 13</p>
+                <p>Estudiante: Carlos Alberto</p>
+                <p>Nota: Hola calificame please.</p>
+                <div class="quantitative-rating">
+                    <label for="nota">Asigna una nota:</label>
+                    <select id="nota">
+                        <option value="0">0.0</option>
+                        <option value="1">1.0</option>
+                        <option value="2">2.0</option>
+                        <option value="3">3.0</option>
+                        <option value="4">4.0</option>
+                        <option value="5">5.0</option>
+                    </select>
+                </div>
+            </div>
+            <div class="right-info">
+                <!-- Ruta relativa desde el archivo HTML -->
+                <img src="imagenes/logopdf.jpg" alt="Logo PDF">
+                <button class="open-button">Abrir</button>
+            </div>
+        </div>
+
+        <!-- Cuadro inferior con sección de comentarios y enviar -->
+        <div class="bottom-box">
+            <div class="comment-section">
+                <div class="comment-header">Comentario</div>
+                <div class="comment-body">
+                    <!-- Área de texto para comentarios -->
+                    <textarea placeholder="Escribe tu comentario aquí"></textarea>
+                </div>
+            </div>
+            <!-- Agregada la función showMessage() al botón de Calificar -->
+            <button class="send-button" onclick="showMessage()">Calificar</button>
+        </div>
+    </div>
+    <script src="script_actividad.js"></script>
+    <script>
+        // Función para mostrar el mensaje al calificar
+        function showMessage() {
+            alert("Actividad calificada.");
+        }
+    </script>
+</body>
+
+</html>

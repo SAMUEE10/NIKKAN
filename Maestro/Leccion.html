@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página 3</title>
+    <link rel="stylesheet" href="styles3.css">
+</head>
+
+<body>
+    <div class="page-container">
+        <div class="options-box">
+            <div class="title-box">
+                <h2>Lección 13</h2>
+            </div>
+        </div>
+        <div class="button-container">
+            <div class="selection-text">
+                <h3>Selecciona el estudiante</h3>
+                <div class="button-grid">
+                    <!-- Botón Estudiante 1 con ícono en la parte derecha -->
+                    <button class="student-button" onclick="redirectToVerActividad()">Estudiante 1 <img src="imagenes/alerta.png" alt="Alerta" class="icon"></button>
+                    <!-- Botón Estudiante 2 sin ícono -->
+                    <button class="student-button" onclick="redirectToVerActividad()">Estudiante 2</button>
+                    <!-- Botón Estudiante 3 sin ícono -->
+                    <button class="student-button" onclick="redirectToVerActividad()">Estudiante 3</button>
+                    <!-- Botón Estudiante 4 con ícono en la parte derecha -->
+                    <button class="student-button" onclick="redirectToVerActividad()">Estudiante 4 <img src="imagenes/alerta.png" alt="Alerta" class="icon"></button>
+                    <!-- Botón Estudiante 5 sin ícono -->
+                    <button class="student-button" onclick="redirectToVerActividad()">Calificar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    <script>
+        // Función para redirigir a la página "ver actividad.html"
+        function redirectToVerActividad() {
+            window.location.href = 'file:///C:/PAGINA%20WEB/Maestro/ver%20actividad.html';
+        }
+    </script>
+</body>
+
+</html>

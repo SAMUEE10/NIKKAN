@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página 2</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-image: url("imagenes/fondo3.jpg");
+            background-size: cover;
+            background-position: center;
+            font-family: "Comic Sans MS", "Comic Sans", cursive;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        .title-box {
+            background-color: rgba(255, 255, 255, 0.7);
+            color: #000;
+            padding: 13px;
+            border-radius: 30px;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px #fff;
+            box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.6);
+        }
+
+        .button-container {
+            background-color: rgba(255, 255, 255, 0.7);
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+            text-align: center;
+        }
+
+        .options-box h2 {
+            color: #333;
+            text-shadow: 2px 2px 4px #fff;
+        }
+
+        .button-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-gap: 10px;
+        }
+
+        .number-button {
+            display: block;
+            width: 50px;
+            height: 50px;
+            padding: 10px;
+            border: 3px solid #000;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: background-color 0.3s, color 0.3s, border-color 0.3s, transform 0.3s;
+            text-shadow: 2px 2px 4px #fff;
+        }
+
+        .number-button:hover {
+            background-color: #0056b3;
+            color: #fff;
+            border-color: #0056b3;
+            transform: scale(1.1);
+        }
+
+        .continue-button {
+            display: block;
+            width: calc(100% - 20px);
+            margin-top: 20px;
+            padding: 15px;
+            border: 3px solid #000;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: background-color 0.3s, color 0.3s, border-color 0.3s, transform 0.3s;
+            text-shadow: 2px 2px 4px #fff;
+        }
+
+        .continue-button:hover {
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="title-box">
+        <h2>Nivel Básico</h2>
+    </div>
+    <div class="button-container">
+        <div class="options-box">
+            <div class="button-grid">
+                <!-- Botones del 1 al 20 -->
+                <button class="number-button" onclick="redirectToEntregaActividad()">1</button>
+                <button class="number-button" onclick="showMessage()">2</button>
+                <button class="number-button" onclick="showMessage()">3</button>
+                <button class="number-button" onclick="showMessage()">4</button>
+                <button class="number-button" onclick="showMessage()">5</button>
+                <button class="number-button" onclick="showMessage()">6</button>
+                <button class="number-button" onclick="showMessage()">7</button>
+                <button class="number-button" onclick="showMessage()">8</button>
+                <button class="number-button" onclick="showMessage()">9</button>
+                <button class="number-button" onclick="showMessage()">10</button>
+                <button class="number-button" onclick="showMessage()">11</button>
+                <button class="number-button" onclick="showMessage()">12</button>
+                <!-- Agregado evento de clic al botón 13 -->
+                <button class="number-button" onclick="redirectToLeccion()">13</button>
+                <button class="number-button" onclick="showMessage()">14</button>
+                <button class="number-button" onclick="showMessage()">15</button>
+                <button class="number-button" onclick="showMessage()">16</button>
+                <button class="number-button" onclick="showMessage()">17</button>
+                <button class="number-button" onclick="showMessage()">18</button>
+                <button class="number-button" onclick="showMessage()">19</button>
+                <button class="number-button" onclick="showMessage()">20</button>
+            </div>
+            <button class="continue-button">Continuar</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    <script>
+        // Función para redirigir a la página entregaactividad.html
+        function redirectToEntregaActividad() {
+            window.location.href = 'file:///C:/PAGINA%20WEB/ENTREGA%20DE%20ACTIVIDAD/entregaactividad.html';
+        }
+
+        // Función para mostrar el mensaje
+        function showMessage() {
+            alert("Próximamente estarán disponibles PRUEBA CON EL #13.");
+        }
+
+        // Función para redirigir a la página Leccion.html
+        function redirectToLeccion() {
+            window.location.href = 'file:///C:/PAGINA%20WEB/Maestro/Leccion.html';
+        }
+    </script>
+</body>
+
+</html>

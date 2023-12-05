@@ -1,0 +1,95 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url("imagenes/fondo4.jpeg");
+    background-size: cover;
+    background-position: center center; /* Centra la imagen tanto vertical como horizontalmente */
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+
+.page-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 600px; /* Ajusta según sea necesario */
+    margin: 0 auto;
+}
+
+.options-box, .button-container {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    width: 110%; /* Ambos cuadros tendrán el mismo ancho */
+    border-radius: 15px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.options-box h2 {
+    color: #FF0000; /* Color rojo para la letra */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Sombra negra */
+    font-size: 24px; /* Ajusta según sea necesario */
+}
+
+.selection-text h3 {
+    color: #000; /* Color negro para el texto de selección */
+    margin-bottom: 20px;
+}
+
+.button-grid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.student-button {
+    display: block;
+    width: 100%;
+    max-width: 400px; /* Ajusta según sea necesario */
+    padding: 15px;
+    margin-bottom: 10px;
+    border: 3px solid #000;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s, transform 0.3s;
+    text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.5); /* Sombra blanca */
+}
+
+.student-button:hover {
+    transform: scale(1.1);
+}
+
+.student-button:last-child {
+    background-color: #FF0000; /* Fondo rojo para el último botón */
+    color: #FFF; /* Color blanco para la letra del último botón */
+}
+/* Agregar estilos para el ícono */
+.icon {
+    width: 20px; /* Ajusta según sea necesario */
+    height: 20px; /* Ajusta según sea necesario */
+    margin-right: 10px; /* Espacio a la derecha del ícono */
+}
+.student-button {
+    display: flex;
+    align-items: center; /* Centra verticalmente */
+    justify-content: space-between; /* Añade espacio entre ícono y texto */
+    width: 100%;
+    max-width: 400px;
+    padding: 15px;
+    margin-bottom: 10px;
+    border: 3px solid #000;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s, transform 0.3s;
+    text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.5);
+}
+
+.student-button img {
+    margin-left: 10px; /* Añade espacio entre el texto y el ícono */
+}
