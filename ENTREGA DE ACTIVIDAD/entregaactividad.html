@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Actividad</title>
+    <link rel="stylesheet" href="styles_actividad.css">
+</head>
+
+<body>
+    <div class="form-container">
+        <div class="form-header">
+            <h2>Formulario de Actividad</h2>
+        </div>
+        <div class="form-section">
+            <label for="nombreActividad">Nombre de la Actividad:</label>
+            <select id="nombreActividad">
+                <option value="actividad1">Actividad 1</option>
+                <option value="actividad2">Actividad 2</option>
+                <!-- Agrega más opciones según sea necesario -->
+            </select>
+        </div>
+        <div class="form-section">
+            <label for="nivel">Nivel:</label>
+            <select id="nivel">
+                <option value="nivel1">Nivel 1</option>
+                <option value="nivel2">Nivel 2</option>
+                <!-- Agrega más opciones según sea necesario -->
+            </select>
+        </div>
+        <div class="form-section">
+            <label for="docente">Docente:</label>
+            <input type="text" id="docente" placeholder="Ingrese el nombre del docente">
+        </div>
+        <div class="form-section">
+            <label for="tipoArchivo">Tipo de Archivo:</label>
+            <select id="tipoArchivo">
+                <option value="pdf">PDF</option>
+                <option value="word">Word</option>
+                <option value="excel">Excel</option>
+                <!-- Agrega más opciones según sea necesario -->
+            </select>
+        </div>
+
+        <!-- Barras de despliegue -->
+        <div class="dropdown">
+            <p>Nombre de la Actividad</p>
+            <!-- Agrega más barras de despliegue según sea necesario -->
+        </div>
+
+        <!-- Espacio para los iconos -->
+        <div class="icon-container">
+            <div class="icon" onclick="eliminarArchivo()" id="eliminarIcon">
+                <img src="eliminar.png" alt="Eliminar">
+            </div>
+
+            <div class="icon">
+                <form id="uploadForm">
+                    <label for="fileInput" class="custom-file-upload">
+                        <img src="Icono_Subir.png" alt="Subir">
+                    </label>
+                    <input type="file" id="fileInput" style="display:none" onchange="mostrarInformacionArchivo()">
+                </form>
+            </div>
+        </div>
+
+        <!-- Espacio para los detalles del archivo -->
+        <div id="fileDetails" class="file-details"></div>
+
+        <!-- Cuadro de confirmación -->
+        <div class="confirmation-box">
+            <p>¿Estás seguro(a) de enviar el archivo?</p>
+        </div>
+
+        <!-- Botón de continuar -->
+        <button class="continue-button" onclick="mostrarMensaje()">Continuar</button>
+    </div>
+    <script src="script_actividad.js"></script>
+    <script>
+        // Función para mostrar el mensaje de confirmación
+        function mostrarMensaje() {
+            alert("Su actividad se ha cargado correctamente.");
+        }
+    </script>
+</body>
+
+</html>

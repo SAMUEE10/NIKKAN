@@ -1,0 +1,92 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Comic Sans MS", cursive, sans-serif; /* Cambiado a Comic Sans MS */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('fondo.png'); /* Agrega el fondo aquí */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.form-container {
+    background-color: rgba(255, 255, 255, 0.8); /* Fondo semi-transparente para resaltar el formulario */
+    width: 60%;
+    max-width: 600px;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px); /* Aplica un efecto de desenfoque al fondo */
+}
+
+/* Resto del código CSS ... */
+
+
+.form-header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.form-section {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+select, input {
+    width: 100%;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+/* ... (código anterior) ... */
+
+/* ... (código anterior) ... */
+
+.icon-container {
+    display: flex;
+    justify-content: space-between; /* Asegura que los íconos estén separados horizontalmente */
+    margin-top: 20px;
+}
+
+.icon {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px; /* Añade un espacio entre los íconos */
+}
+
+.icon img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+/* Nueva regla para mostrar información del archivo */
+#fileInfo {
+    text-align: center;
+    margin-top: 10px;
+}
+
+/* ... (código posterior) ... */
+
+.confirmation-box {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.continue-button {
+    background-color: #FF0000;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+}
