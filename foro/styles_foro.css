@@ -1,0 +1,98 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Comic Sans MS", "Arial", sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+}
+
+.page-container {
+    display: flex;
+    width: 80%;
+    max-width: 1200px;
+    margin-top: 20px;
+}
+
+.section-box {
+    flex: 1;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 15px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.students-section,
+.forum-section,
+.my-messages-section {
+    margin-right: 20px;
+}
+
+.students-section h2,
+.forum-section h2,
+.my-messages-section h2 {
+    margin-bottom: 10px;
+}
+
+.students-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.students-list li {
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+}
+
+.students-list img {
+    width: 50px;  /* Ajusta el ancho de la imagen según tus preferencias */
+    height: 50px; /* Ajusta el alto de la imagen según tus preferencias */
+    border-radius: 50%;
+    margin-right: 10px;
+    object-fit: cover;
+}
+
+
+.post-section button {
+    background-color: #FF0000;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 38px; /* Ajusta el margen izquierdo según sea necesario */
+}
+
+.post img {
+    width: 400px;  /* Ajusta el ancho de la imagen según tus preferencias */
+    height: 400px; /* Ajusta el alto de la imagen según tus preferencias */
+    border-radius: 50%;
+    margin-right: 10px;
+    object-fit: cover;
+}
+.post-section h2 {
+    text-align: center;  /* Centra el texto en el área de publicación */
+}
+
+.post-section textarea {
+    width: 100%;  /* Ajusta el ancho del área de texto al 100% del contenedor */
+    box-sizing: border-box;  /* Incluye el relleno y el borde en el ancho total */
+    margin-bottom: 10px;
+}
+
+.post-section button {
+    background-color: #FF0000;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}

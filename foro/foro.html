@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foro</title>
+    <link rel="stylesheet" href="styles_foro.css">
+</head>
+
+<body>
+    <div class="page-container">
+        <div class="students-section section-box">
+            <h2>Estudiantes Conectados</h2>
+            <ul class="students-list">
+                <li>Estudiante 1</li>
+                <li>Estudiante 2</li>
+                <li>Estudiante 3</li>
+                <li>Estudiante 4</li>
+                <li>Estudiante 5</li>
+                <li>Estudiante 6</li>
+                <li>Estudiante 7</li>
+                <li>Estudiante 8</li>
+                <li>Estudiante 9</li>
+                <li>Estudiante 10</li>
+            </ul>
+        </div>
+        <div class="forum-section section-box">
+            <div class="post-section">
+                <h2>Publicar</h2>
+                <textarea id="postContent" placeholder="Escribe tu mensaje..."></textarea>
+                <input type="file" id="fileInput" accept=".png, .jpg, .jpeg, .gif">
+                <button onclick="postMessage()">Publicar</button>
+            </div>
+            <div class="posts-section">
+                <h2>Publicaciones Recientes</h2>
+                <!-- Aquí se mostrarán las publicaciones de otros estudiantes -->
+                <div class="post">
+                    <img src="estudiante.jpg" alt="Estudiante">
+                    <p>Estudiante X se fue de vacaciones. 🏖️</p>
+                    <!-- Puedes agregar más contenido según sea necesario -->
+                </div>
+            </div>
+        </div>
+        <div class="my-messages-section section-box">
+            <h2>Mis Mensajes</h2>
+            <!-- Aquí se mostrarán los mensajes del estudiante actual -->
+            <!-- Puedes agregar más contenido según sea necesario -->
+        </div>
+    </div>
+    <script src="script_foro.js"></script>
+</body>
+
+</html>
